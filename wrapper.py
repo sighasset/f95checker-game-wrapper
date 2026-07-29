@@ -14,7 +14,10 @@ def main():
     start = time.monotonic()
 
     print("Measuring play time...")
-    start_app()
+    app_path = start_app()
+
+    if app_path.suffix.lower() != ".exe":
+        return
 
     session_time = round(time.monotonic() - start)
 
@@ -64,6 +67,8 @@ def start_app():
         subprocess.run(command, cwd=starter_path.parent, check=False)
     else:
         os.startfile(app_path)
+
+    return app_path
 
 
 TIME_PREFIX = "Play Time: "

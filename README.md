@@ -35,3 +35,4 @@ Play Time: 3h 12m 23s
 
 - The updated play time will not appear in F95Checker until it is restarted.
 - Do not edit the game's notes in F95Checker before restarting it after closing the game. Any changes made before the update may overwrite and remove the latest session play time.
+- Play time tracking works only for `.exe` applications. Other supported formats (such as `.html`, `.htm`, or `.swf`) are launched but their running time cannot be tracked reliably.
